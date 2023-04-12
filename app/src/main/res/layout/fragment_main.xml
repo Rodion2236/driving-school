@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color_gray"
+    tools:context=".MainFragment">
+
+    <TextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="220dp"
+        android:layout_height="75dp"
+        android:fontFamily="@font/font_family"
+        android:gravity="center"
+        android:text="Добро пожаловать в справочник правил дорожного движения!"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="100dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/lectory_button"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:background="@drawable/shape_button"
+        android:drawableStart="@drawable/book"
+        android:text="  Лекторий"
+        android:textSize="22sp"
+        android:paddingStart="15dp"
+        android:gravity="left|center_vertical"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_welcome"
+        android:layout_marginTop="100dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/testing_button"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:text="  Проверь себя"
+        android:drawableStart="@drawable/test"
+        android:paddingStart="15dp"
+        android:background="@drawable/shape_button"
+        android:gravity="left|center_vertical"
+        android:textSize="22sp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lectory_button"
+        android:layout_marginTop="20dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
