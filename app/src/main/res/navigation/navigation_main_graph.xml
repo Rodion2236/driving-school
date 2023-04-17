@@ -16,14 +16,24 @@
             app:destination="@id/category_fragment"/>
         <action
             android:id="@+id/action_main_fragment_to_test_fragment"
+            app:destination="@id/test_category_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/test_category_fragment"
+        android:name="com.rodion2236.drivingschool.ui.CategoryTestFragment"
+        android:label="fragment_category_test"
+        tools:layout="@layout/fragment_category_test">
+        <action
+            android:id="@+id/action_test_category_fragment_to_test_fragment"
             app:destination="@id/test_fragment" />
     </fragment>
 
     <fragment
         android:id="@+id/test_fragment"
-        android:name="com.rodion2236.drivingschool.ui.CategoryTestFragment"
+        android:name="com.rodion2236.drivingschool.TestFragment"
         android:label="fragment_test"
-        tools:layout="@layout/fragment_category_test">
+        tools:layout="@layout/fragment_test">
     </fragment>
 
     <fragment
