@@ -1,6 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/navigation_main_graph">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_main_graph"
+    app:startDestination="@id/main_fragment">
 
+    <fragment
+        android:id="@+id/main_fragment"
+        android:name="com.rodion2236.drivingschool.ui.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main">
+
+        <action
+            android:id="@+id/action_main_to_category"
+            app:destination="@id/category_fragment"/>
+        <action
+            android:id="@+id/action_main_fragment_to_test_fragment"
+            app:destination="@id/test_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/test_fragment"
+        android:name="com.rodion2236.drivingschool.ui.CategoryTestFragment"
+        android:label="fragment_test"
+        tools:layout="@layout/fragment_category_test">
+    </fragment>
+
+    <fragment
+        android:id="@+id/category_fragment"
+        android:name="com.rodion2236.drivingschool.ui.CategoryFragment"
+        android:label="fragment_category"
+        tools:layout="@layout/fragment_category">
+
+        <action
+            android:id="@+id/action_category_to_categoryDetail"
+            app:destination="@id/category_detail_fragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/category_detail_fragment"
+        android:name="com.rodion2236.drivingschool.ui.CategoryDetailFragment"
+        android:label="fragment_categoryDetail"
+        tools:layout="@layout/fragment_category_detail">
+
+        <action
+            android:id="@+id/action_category_detail_to_information_fragment"
+            app:destination="@id/information_fragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/information_fragment"
+        android:name="com.rodion2236.drivingschool.InformationFragment"
+        android:label="fragment_information"
+        tools:layout="@layout/fragment_information">
+    </fragment>
 </navigation>
