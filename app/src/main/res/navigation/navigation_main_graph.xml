@@ -31,7 +31,7 @@
 
     <fragment
         android:id="@+id/test_fragment"
-        android:name="com.rodion2236.drivingschool.TestFragment"
+        android:name="com.rodion2236.drivingschool.ui.TestFragment"
         android:label="fragment_test"
         tools:layout="@layout/fragment_test">
     </fragment>
@@ -60,7 +60,7 @@
 
     <fragment
         android:id="@+id/information_fragment"
-        android:name="com.rodion2236.drivingschool.InformationFragment"
+        android:name="com.rodion2236.drivingschool.ui.InformationFragment"
         android:label="fragment_information"
         tools:layout="@layout/fragment_information">
     </fragment>
