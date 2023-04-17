@@ -5,11 +5,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/main_color_gray"
     tools:context=".ui.MainFragment">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/ablMainFragment"
         android:layout_width="match_parent"
+        android:backgroundTint="@color/main_color_background_green"
         android:layout_height="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,45 +34,19 @@
         android:fontFamily="@font/font_family"
         android:gravity="center"
         android:text="Cправочник правил дорожного движения"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/guide_button"
-        android:layout_width="350dp"
-        android:layout_height="80dp"
-        android:background="@drawable/shape_button"
-        android:drawableStart="@drawable/book"
-        android:text="  Справочник"
-        android:textSize="22sp"
-        android:paddingStart="15dp"
-        android:gravity="start|center_vertical"
-        android:textColor="@color/white"
-        android:textAllCaps="false"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_category_start"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginBottom="180dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_welcome"
-        android:layout_marginTop="100dp"
-        tools:ignore="RtlSymmetry" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/testing_button"
-        android:layout_width="350dp"
-        android:layout_height="80dp"
-        android:text="  Проверь себя"
-        android:background="@drawable/shape_button"
-        android:drawableStart="@drawable/test"
-        android:paddingStart="15dp"
-        android:gravity="start|center_vertical"
-        android:textSize="22sp"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/guide_button"
-        android:layout_marginTop="20dp"
-        tools:ignore="RtlSymmetry" />
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
