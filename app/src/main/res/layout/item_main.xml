@@ -2,7 +2,7 @@
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="370dp"
     android:layout_height="wrap_content"
     android:layout_marginBottom="20dp"
     app:cardBackgroundColor="@color/main_color_background_green"
@@ -24,7 +24,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:src="@drawable/book" />
+            tools:src="@drawable/book"/>
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/tv_title_start"
@@ -39,15 +39,15 @@
             app:layout_constraintEnd_toStartOf="@+id/arrow_right_start"
             app:layout_constraintStart_toEndOf="@+id/iv_item_start"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="Справочник" />
+            tools:text="Справочник"/>
 
         <ImageView
             android:id="@+id/arrow_right_start"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:src="@drawable/arrow_right"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </com.google.android.material.card.MaterialCardView>
